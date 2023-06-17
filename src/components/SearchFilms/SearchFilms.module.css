@@ -1,0 +1,23 @@
+.searchBox {
+    width: 350px;
+}
+
+.year {
+    width: 50px;
+}
+
+.searchBox form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+}
+
+.searchBox button{
+    padding: 3px 5px;
+}
+
+.searchBox input {
+    border: 3px solid #313131;
+    border-radius: 5px;
+}

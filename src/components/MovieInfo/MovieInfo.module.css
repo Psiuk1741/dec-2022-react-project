@@ -1,0 +1,42 @@
+.movie_wrap_dark{
+    color: white;
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: black solid 1px;
+    background: rgba(0, 0, 0, 0.9);
+}
+.movie_wrap_light {
+    border-radius: 20px;
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    border: white solid 1px;
+    background: rgba(247, 245, 240, 0.8);
+}
+
+.main_div{
+padding: 30px;
+display: flex;
+}
+
+.main_poster{
+    height: 500px;
+
+}
+
+.actors_div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.trailer_div{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}

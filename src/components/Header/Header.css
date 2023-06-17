@@ -1,0 +1,58 @@
+.header_light {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*z-index: 100;*/
+    background-color: rgb(247, 245, 240);
+}
+
+.header_dark {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*z-index: 100;*/
+    background-color: black;
+}
+
+.header__search {
+    display: flex;
+}
+
+.header__search input {
+
+    padding: 5px;
+    border: 1px solid #ccc;
+}
+
+.header__siteName {
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header__user {
+    display: flex;
+    align-items: center;
+}
+
+.header__userName {
+    color: grey;
+    font-weight: bold;
+}
+
+.header__userPhoto {
+    margin-right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header__logoPhoto{
+    height: 40px;
+}

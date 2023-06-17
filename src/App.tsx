@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import  './App.css';
+import {createBrowserRouter, Navigate, Route, Routes} from "react-router-dom";
+import {MainLayout} from "./layouts";
+import {useAppSelector} from "./hooks";
+import {MainPage, MoviePage} from "./pages";
+import { SearchPage } from './pages/SearchPage';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+
+    return (
+      <div>
+   <Routes>
+       <Route path={'/'} element={<MainLayout/>}></Route>
+       <Route index element={<Navigate to={'main'}/>}/>
+       <Route path={'main'} element={<MainPage/>}></Route>
+       <Route path={'movie/:id'} element={<MoviePage/>}></Route>
+       <Route path={'search'} element={<SearchPage/>}/>
+   </Routes>
+      </div>
   );
+
 }
 
 export default App;
